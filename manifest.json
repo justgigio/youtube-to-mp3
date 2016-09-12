@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "YouTube Playlist Downloader",
+  "description": "Uma extensão pra fazer download de playlist do YouTube em mp3",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "downloads",
+    "https://code.jquery.com/",
+    "https://www.youtube.com/",
+    "https://s.ytimg.com/",
+    "http://www.youtube-mp3.org/"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://code.jquery.com/ https://www.youtube.com/ https://s.ytimg.com/ ; object-src 'self'"
+}
